@@ -1,10 +1,10 @@
-AWS_ACCESS_KEY_ID: 'AKIAIUFOQ3PEUWEK2H3A'
-AWS_SECRET_ACCESS_KEY: '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'
-ec2_keypair: "ansiblenew"
-ec2_security_group: "sg-4e0c0f28"
+AWS_ACCESS_KEY_ID: 'AKIAJ6QDKJAUABDSD76A'
+AWS_SECRET_ACCESS_KEY: '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'
+ec2_keypair: "newpair"
+ec2_security_group: "sg-ed7adc97"
 ec2_instance_type: "t2.micro"
 ec2_image: "ami-835b4efa"
-ec2_subnet_ids: ['subnet-9b86eced','subnet-1779cd4f','subnet-f31d4097']
+ec2_subnet_ids: ['subnet-2bf84570']
 ec2_region: "us-west-2"
 ec2_tag_Name: "webserver"
 ec2_tag_Type: "webserver"
