@@ -1,0 +1,8 @@
+---
+ - hosts: localhost
+   connection: local
+   gather_facts: false
+   user: ubuntu
+   become: true
+   roles:
+     - ec2

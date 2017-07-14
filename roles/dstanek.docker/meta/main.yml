@@ -1,0 +1,18 @@
+galaxy_info:
+  author: David Stanek
+  description: A simple role to install docker-engine and run the docker service.
+  issue_tracker_url: https://github.com/dstanek/ansible-role-docker/issues
+  license: Apache
+
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - wily
+        - xenial
+
+  galaxy_tags:
+    - docker
+
+dependencies: []
