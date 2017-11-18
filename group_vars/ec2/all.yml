@@ -1,7 +1,7 @@
 ec2:
 
-  AWS_ACCESS_KEY_ID: 'AKIAJFBWKZDVGJTTWCNA'
-  AWS_SECRET_ACCESS_KEY: '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'
+  AWS_ACCESS_KEY_ID: '<>'
+  AWS_SECRET_ACCESS_KEY: '<>'
   region: us-west-2
   credentials: kubenodes
   image: ami-835b4efa
