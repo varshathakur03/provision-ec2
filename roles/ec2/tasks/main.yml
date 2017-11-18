@@ -1,14 +1,14 @@
 ---
 - name: ProvisionEC2Box
   ec2:
-     key_name: "{{ ec2_keypair }}"     
-     region: "{{ ec2_region }}"
-     instance_tags: '{"Name":"{{ec2_tag_Name}}","Type":"{{ec2_tag_Type}}","Environment":"{{ec2_tag_Environment}}"}'
-     image: "{{ ec2_image }}"
-     instance_type: "{{ ec2_instance_type }}"
-     group_id: "{{ ec2_security_group }}"
-     vpc_subnet_id: "{{ ec2_subnet_ids|random }}"
-     assign_public_ip: yes
-     wait: true
-     count: 1
-
+    region: "{{ ec2.region }}"
+    keypair: "{{ ec2.credentials }}"
+    instance_tags: "{{ ec2.tags }}"
+    image: "{{ ec2.image }}"
+    instance_type: "{{ ec2_instance_type }}"
+    instance_profile_name: "{{ ec2.role | default('') }}"
+    vpc_subnet_id: "{{ ec2.subnet }}"
+    assign_public_ip: "{{ ec2.public_ip | default('no') }}"
+    private_ip: "{{ ec2.private_ip | default('') }}"
+    wait: true
+    count: 1     

@@ -5,6 +5,7 @@ ec2:
   region: us-west-2
   credentials: kubenodes
   image: ami-835b4efa
+  sg: sg-9cfad3e1
   instance_type: t2.micro
   subnet: subnet-f31d4097
   public_ip: yes
@@ -14,3 +15,15 @@ ec2:
     - device_name: /dev/xvda
       volume_type: standard
       volume_size: 8
+
+ec2_keypair: "kubenodes"
+ec2_security_group: "sg-4e0c0f28"
+ec2_instance_type: "t2.micro"
+ec2_image: "ami-835b4efa"
+ec2_subnet_ids: ['subnet-2bf84570']
+ec2_region: "us-west-2"
+ec2_tag_Name: "webserver"
+ec2_tag_Type: "webserver"
+ec2_tag_Environment: "production"
+ec2_volume_size: 8
+
