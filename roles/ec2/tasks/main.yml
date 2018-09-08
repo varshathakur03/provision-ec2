@@ -5,7 +5,7 @@
     keypair: "{{ ec2.credentials }}"
     instance_tags: "{{ ec2.tags }}"
     image: "{{ ec2.image }}"
-    instance_type: "{{ ec2_instance_type }}"
+    instance_type: "{{ ec2.instance_type }}"
     instance_profile_name: "{{ ec2.role | default('') }}"
     vpc_subnet_id: "{{ ec2.subnet }}"
     assign_public_ip: "{{ ec2.public_ip | default('no') }}"
